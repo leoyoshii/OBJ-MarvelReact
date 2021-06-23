@@ -1,0 +1,35 @@
+.cardContainer {
+  display: flex;
+  min-height: 7rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--white);
+  border: 1px solid var(--gray-100);
+  margin: 0.25rem 0;
+
+  .cardImage {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+
+    img {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 0.25rem;
+    }
+  }
+  .cardTitle {
+    h4 {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .cardContainer {
+    .cardTitle {
+      span {
+        display: none;
+      }
+    }
+  }
+}
